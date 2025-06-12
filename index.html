@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Detection API</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Object Detection</h1>
+
+      <div id="upload-section">
+        <input type="file" id="imageUpload" accept="image/*" />
+        <img
+          id="uploadedImage"
+          src="#"
+          alt="Uploaded Image"
+          style="display: none"
+        />
+        <button id="submitBtn">Submit to API</button>
+      </div>
+
+      <div id="result-section" style="display: none">
+        <h2>API Result</h2>
+        <p><strong>Filename:</strong> <span id="resultFilename"></span></p>
+        <h3>Detected Objects:</h3>
+        <ul id="detectedObjectsList"></ul>
+        <canvas id="resultCanvas"></canvas>
+        <button id="backBtn">Upload New Image</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
